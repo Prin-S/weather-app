@@ -2,12 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Untitled</title>
+    <title>Weather App</title>
 </head>
 <body>
     <header>
         
-    </header>   
+    </header>
+    <div>
+        <form id="weather-form">
+            <label class="label" for="visual-crossing-api">Visual Crossing API: <input id="visual-crossing-api" type="text" name="visual-crossing-api" required></label><br/>
+            <label class="label" for="location">Location: <input id="location" type="text" name="location" required></label><br/>
+            <div>
+                <span class="label">Unit:</span>
+                <input id="metric" type="radio" name="unit" value="metric" required checked><label for="metric">Celsius (°C)</label>
+                <input id="us" type="radio" name="unit" value="us"><label for="us">Fahrenheit (°F)</label>
+            </div>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
     <div id="content"></div>
+    <div id="message"></div>
 </body>
 </html>

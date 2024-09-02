@@ -1,2 +1,2 @@
-# webpack-template
-A webpack template
+# weather-app
+Project for https://www.theodinproject.com/lessons/node-path-javascript-weather-app
