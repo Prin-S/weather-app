@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Weather App</title>
+<script defer src="main.js"></script></head>
+<body>
+    <div id="weather-div">
+        <form id="weather-form">
+            <label class="label" for="visual-crossing-api">Visual Crossing API: <input id="visual-crossing-api" type="text" name="visual-crossing-api" required></label><br/>
+            <label class="label" for="location">Location: <input id="location" type="text" name="location" required></label><br/>
+            <div>
+                <span class="label">Unit:</span>
+                <input id="metric" type="radio" name="unit" value="metric" required checked><label for="metric">Celsius (°C)</label>
+                <input id="us" type="radio" name="unit" value="us"><label for="us">Fahrenheit (°F)</label>
+            </div>
+            <button class="button" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="message"></div>
+    <div class="wrapper">
+        <div id="box1" class="box"><p id="box1-text"></p></div>
+        <div id="box2" class="box"><p>Humidity</p><p id="box2-text"></p></div>
+        <div id="box3" class="box"><p>Feels Like</p><p id="box3-text"></p></div>
+        <div id="box4" class="box"><p>Rain</p><p id="box4-text"></p></div>
+        <div id="box5" class="box"><p>Chance of Rain</p><p id="box5-text"></p></div>
+        <div id="box6" class="box"><p id="box6-text"></p></div>
+    </div>      
+</body>
+</html>
